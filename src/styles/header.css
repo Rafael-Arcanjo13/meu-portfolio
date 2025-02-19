@@ -52,3 +52,17 @@
     font-weight: bold;
     font-size: 2rem;
 }
+
+#btn_mobile {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    #btn_mobile {
+        display: block;
+    }
+
+    .nav-itens {
+        display: none;
+    }
+}
