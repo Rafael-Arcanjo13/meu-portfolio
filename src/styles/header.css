@@ -126,6 +126,21 @@
         height: 2px;
         background: currentColor;
         margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    #btn_mobile.animation-btn #hamburguer { 
+        border-top-color: transparent;
+    }
+
+    #btn_mobile.animation-btn #hamburguer::before {
+        transform: rotate(135deg);
+    }
+
+    #btn_mobile.animation-btn #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
     }
     
 }
