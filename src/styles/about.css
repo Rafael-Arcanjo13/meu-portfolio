@@ -10,7 +10,6 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: calc(100vh - 92px);
     box-shadow: 2px, 2px, 2px, 2px rgba(0, 0, 0, 0.5);
 }
 
@@ -19,9 +18,9 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    gap: 10rem;
-    height: 600px;
     width: 1257px;
+    flex-wrap: wrap-reverse;
+    background-color: #181818;
 }
 
 .text-about {
@@ -42,7 +41,8 @@
     line-height: 1.5em;
 }
 
-#foto_perfil {
+.img-about #foto_perfil {
+    margin: 20px;
     border-radius: 50%;
     filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.7))
 }
