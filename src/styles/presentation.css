@@ -1,10 +1,12 @@
 main {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: start;
     background-color: #0A0A0A;
     width: 80%;
+    height: 100vh;
+    box-shadow: 5px  5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .presentation {

@@ -1,4 +1,8 @@
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
     background-color: #18181B;
 }
