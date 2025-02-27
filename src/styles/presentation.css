@@ -24,7 +24,7 @@ main {
     align-items: center;
     flex-wrap: wrap;
     gap: 32px;
-    padding: 34px;
+    padding: 25px;
 }
 
 .img-perfil {
@@ -44,6 +44,7 @@ main {
     flex-direction: column;
     gap: 6px;
     color: #FAFAFA;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 .txt-header h1 {
@@ -60,7 +61,9 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
+    text-align: center;
     justify-content: flex-start;
+    flex-wrap: wrap;
     gap: 6px;
 }
 
@@ -71,4 +74,41 @@ main {
     font-size: 12px;
     font-weight: bold;
     cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .presentation-container {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .img-perfil {
+        width: 100%;
+    }
+    
+    .txt-header {
+        gap: 15px;
+        color: #FAFAFA;
+        text-align: center;
+    }
+
+    .txt-header h1 {
+        font-size: 33px;
+    }
+    
+    .txt-header h2 {
+        font-size: 1.2em;
+    }
+    
+    
+    .languages {
+        justify-content: center;
+        gap: 8px;
+    }
+    
+    .programming-language {
+        padding: 8px 15px;
+        font-size: 0.8em;
+    }
 }
