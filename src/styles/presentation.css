@@ -24,7 +24,6 @@ main {
     align-items: center;
     flex-wrap: wrap;
     gap: 32px;
-    padding: 25px;
 }
 
 .img-perfil {
