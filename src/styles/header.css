@@ -4,7 +4,7 @@
     align-items: center;
     width: 100%;
     background-color: #18181B;
-    height: 92px;
+    padding: 1.8rem 0;
 }
 
 .nav-bar {
@@ -63,7 +63,7 @@
         display: block;
         position: absolute;
         width: 100%;
-        top: 92px;
+        top: 89.59px;
         right: 0px;
         background-color: #18181B;
         text-align: center;
@@ -75,7 +75,7 @@
     }
     
     #nav_list .nav-itens.active {
-        height: calc(100vh - 92px);
+        height: calc(100vh - 89.59px);
         visibility: visible;
         overflow-y: auto;
     }
