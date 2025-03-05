@@ -9,3 +9,19 @@
     width: 80%;
     margin-top: 32px;
 }
+
+.portfolio-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
+    color: #fff;
+    padding: 32px;
+}
+
+.secondary-text 
+a {
+color: #DC2626;
+}
