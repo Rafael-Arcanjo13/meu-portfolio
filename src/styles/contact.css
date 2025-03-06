@@ -1,0 +1,112 @@
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    width: 80%;
+    margin-top: 32px;
+}
+
+.contact-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
+    color: #fff;
+    padding: 32px;
+}
+
+.contact-description > .secondary-text {
+    text-align: center;
+}
+
+.contact-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 32px;
+    color: #fff;
+    padding: 32px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    max-width: 100%;
+    width: 32rem;
+    font-size: 1.125rem;
+}
+
+@media (max-width: 768px) {
+    .contact-form-container {
+        padding: 16px; /* Reduz o padding em telas menores */
+    }
+
+    #form {
+        width: 100%;  /* Para garantir que ele ocupe toda a largura disponível */
+        max-width: 90%; /* Ajuste conforme necessário */
+    }
+}
+
+#form label, #form input, #form textarea, #form button {
+    display: block;
+    width: 100%;
+}
+
+#form label {
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+#form input, #form textarea {
+    font: inherit;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: border-color, box-shadow 0.2s;
+}
+
+#form textarea {
+    min-height: 13rem;
+    resize: vertical;
+}
+
+#form input:hover, #form input:focus, #form textarea:hover, #form textarea:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1);
+}
+
+#form button {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #DC2626;
+    color: #fff;
+    border-radius: 8px;
+    font: inherit;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+    padding: 1rem 3.5rem;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+#form button:hover, #form button:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1);
+}
