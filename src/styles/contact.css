@@ -51,6 +51,8 @@
 @media (max-width: 768px) {
     .contact-form-container {
         padding: 16px; /* Reduz o padding em telas menores */
+        align-items: center;
+        justify-content: center;
     }
 
     #form {
