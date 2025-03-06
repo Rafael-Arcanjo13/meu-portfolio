@@ -294,15 +294,14 @@
                             abaixo e entrarei em contato com você o mais breve possível.</p>
                     </article>
                     <article class="contact-form-container">
-                        <form action="https://formsubmit.co/rafael.arcanjo.dssilva@gmail.com" method="POST" id="form">
+                        <form action="https://formsubmit.co/rafael.arcanjo.dssilva@gmail.com" method="POST" data-form id="form">
                             <label for="name">Nome</label>
                             <input type="text" name="name" id="name" required>
                             <label for="name">E-mail</label>
                             <input type="email" name="email" id="email" required>
                             <label for="message">Mensagem</label>
-                            <textarea name="message" placeholder="Escreva aqui" id="message" required></textarea>
-                            <input type="hidden" name="_next" value="https://http://127.0.0.1:5500/src/index.html/Obrigado.html">
-                            <button type="submit">Enviar</button>
+                            <textarea name="message" placeholder="Escreva aqui" id="mensagem" required></textarea>
+                            <button type="submit" data-button>Enviar</button>
                         </form>
                     </article>
                 </section>
@@ -311,6 +310,7 @@
     </main>
 
     <script src="js/header.js"></script>
+    <script defer src="js/contact.js"></script>
 </body>
 
 </html>
