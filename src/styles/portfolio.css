@@ -27,6 +27,10 @@ color: #DC2626;
 text-decoration: none;
 }
 
+.portfolio-description > .secondary-text {
+    text-align: center;
+}
+
 .portfolio-content-container {
     display: flex;
     flex-direction: column;

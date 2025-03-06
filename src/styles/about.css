@@ -31,6 +31,10 @@
     flex-direction: column;
 }
 
+.about-summary-main > .secondary-text {
+    text-align: center;
+}
+
 .about_content {
     display: flex;
     flex-direction: row;
