@@ -51,13 +51,10 @@
 @media (max-width: 768px) {
     .contact-form-container {
         padding: 16px; /* Reduz o padding em telas menores */
-        align-items: center;
-        justify-content: center;
     }
 
     #form {
         width: 100%;  /* Para garantir que ele ocupe toda a largura disponível */
-        max-width: 90%; /* Ajuste conforme necessário */
     }
 }
 
