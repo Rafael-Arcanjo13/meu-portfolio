@@ -55,8 +55,6 @@
     width: 100%;
 }
 
-
-
 .text-about-detail {
     display: flex;
     flex-direction: column;
@@ -87,6 +85,12 @@
     align-items: start;
     flex-wrap: wrap;
     gap: 3rem;
+}
+
+@media (max-width: 768px) {
+    .text-about, .skills-about {
+        align-items: center;
+    }
 }
 
 .about-language {
