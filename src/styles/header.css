@@ -3,8 +3,17 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background-color: #18181B;
+    background-color: #18181bfa;
+    backdrop-filter: blur(10px);
+    /* Aplica o desfoque */
+    -webkit-backdrop-filter: blur(10px);
+    /* Suporte para Safari */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Sombras para dar destaque */
     padding: 1.8rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 
 .nav-bar {
@@ -76,14 +85,20 @@
 }
 
 @media (max-width: 1000px) {
-    
+
     .nav-itens {
         display: block;
         position: absolute;
         width: 100%;
         top: 89.59px;
         right: 0px;
-        background-color: #18181B;
+        background-color: #18181bfa;
+        backdrop-filter: blur(10px);
+        /* Aplica o desfoque */
+        -webkit-backdrop-filter: blur(10px);
+        /* Suporte para Safari */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        /* Sombras para dar destaque */
         text-align: center;
         z-index: 1000;
         height: 0px;
@@ -91,19 +106,19 @@
         visibility: hidden;
         overflow-y: hidden;
     }
-    
+
     #nav_list .nav-itens.active {
-        height: calc(100vh - 89.59px);
+        height: 18rem;
         visibility: visible;
         overflow-y: auto;
     }
-    
+
     .nav-itens .nav-item {
         padding: 1rem 0;
         margin: 0 1rem;
         border-bottom: 2px solid rgba(0, 0, 0, 0.3);
     }
-    
+
     .nav-itens #social {
         display: flex;
         flex-direction: row;
@@ -113,13 +128,15 @@
     .nav-itens #social .linkedin {
         border-bottom: none;
     }
+
     .nav-itens #social .instagram {
         border-bottom: none;
     }
+
     .nav-itens #social .github {
         border-bottom: none;
     }
-    
+
     #btn_mobile {
         display: flex;
         padding: .5rem 1rem;
@@ -137,7 +154,8 @@
         width: 20px;
     }
 
-    #hamburguer::after, #hamburguer::before {
+    #hamburguer::after,
+    #hamburguer::before {
         content: '';
         display: block;
         width: 20px;
@@ -148,7 +166,7 @@
         position: relative;
     }
 
-    #btn_mobile.animation-btn #hamburguer { 
+    #btn_mobile.animation-btn #hamburguer {
         border-top-color: transparent;
     }
 
@@ -160,5 +178,5 @@
         transform: rotate(-135deg);
         top: -7px;
     }
-    
+
 }
