@@ -39,6 +39,24 @@
     color: #fff;
     font-size: 1.2rem;
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.nav-itens>.nav-item>a::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 3px;
+    border-radius: 2px;
+    background: #DC2626;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.nav-item a:hover::after {
+    width: 30px;
 }
 
 #social {
