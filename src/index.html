@@ -19,7 +19,7 @@
 
 <body>
     <header id="header">
-        <div class="nav-bar">
+        <div class="nav-bar hidden">
             <a href="#" class="logo">&lsaquo;/&rsaquo; Rafael Arcanjo</a>
 
             <nav id="nav_list">
@@ -50,7 +50,7 @@
     <main id="main">
         <div id="main_container">
             <div class="main-content-all">
-                <section class="presentation-container">
+                <section class="presentation-container hidden">
                     <div class="presentation">
                         <section class="img-perfil">
                             <img src="image/rafa-img.png" alt="Foto de Perfil" class="perfil">
@@ -81,10 +81,10 @@
                 <section id="about">
                     <article id="about_summary">
                         <div class="about-summary-content">
-                            <div class="about-summary-title">
+                            <div class="about-summary-title hidden">
                                 <p class="title">Sobre mim</p>
                             </div>
-                            <div class="about-summary-main">
+                            <div class="about-summary-main hidden">
                                 <p class="secondary-text">Aqui você encontrará mais informações sobre mim, o que eu faço
                                     e minhas habilidades atuais, principalmente em termos de programação e tecnologia.
                                 </p>
@@ -92,7 +92,7 @@
                         </div>
                     </article>
                     <article class="about_content">
-                        <div class="text-about">
+                        <div class="text-about hidden">
                             <h2 class="sub-title">Venha me conhecer!</h2>
                             <div class="text-about-detail">
                                 <p>
@@ -125,7 +125,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="skills-about">
+                        <div class="skills-about hidden">
                             <h2 class="sub-title">Minha habilidades</h2>
                             <div class="languages">
                                 <div class="html programming-language about-language">
@@ -160,7 +160,7 @@
                             <h2 class="sub-title">Front-end</h2>
                         </div>
                         <div class="my-projects">
-                            <div class="project">
+                            <div class="project hidden">
                                 <div class="project-content">
                                     <div class="project-img-container">
                                         <img src="image/android-site-img.jpg" alt="Imagem do projeto"
@@ -191,7 +191,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="project">
+                            <div class="project hidden">
                                 <div class="project-content">
                                     <div class="project-img-container">
                                         <img src="image/spotify-site-img.jpg" alt="Imagem do projeto"
@@ -222,7 +222,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="project">
+                            <div class="project hidden">
                                 <div class="project-content">
                                     <div class="project-img-container">
                                         <img src="image/calculo-imc-img.jpg" alt="Imagem do projeto"
@@ -253,7 +253,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="project">
+                            <div class="project hidden">
                                 <div class="project-content">
                                     <div class="project-img-container">
                                         <img src="image/pagina-de-login-img.jpg" alt="Imagem do projeto"
@@ -288,12 +288,12 @@
                     </article>
                 </section>
                 <section id="contact">
-                    <article class="contact-description">
+                    <article class="contact-description hidden">
                         <p class="title">Contato</p>
                         <p class="secondary-text">Sinta-se à vontade para entrar em contato comigo enviando o formulário
                             abaixo e entrarei em contato com você o mais breve possível.</p>
                     </article>
-                    <article class="contact-form-container">
+                    <article class="contact-form-container hidden">
                         <form action="https://formsubmit.co/rafael.arcanjo.dssilva@gmail.com" method="POST" data-form id="form">
                             <label for="name">Nome</label>
                             <input type="text" name="name" placeholder="Digite seu nome" id="name" required>
@@ -309,6 +309,7 @@
         </div>
     </main>
 
+    <script src="js/script.js"></script>
     <script src="js/header.js"></script>
     <script defer src="js/contact.js"></script>
 </body>

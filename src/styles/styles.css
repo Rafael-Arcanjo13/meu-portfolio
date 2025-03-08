@@ -12,6 +12,44 @@ body {
     height: 100%;
 }
 
+.hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all .8s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all .8s;
+}
+
+.my-projects :nth-child(2) {
+    transition-delay: 300ms;
+}
+
+.my-projects :nth-child(3) {
+    transition-delay: 500ms;
+}
+
+.my-projects :nth-child(4) {
+    transition-delay: 700ms;
+}
+
+.about-summary-content :nth-child(2) {
+    transition-delay: 300ms;
+}
+
+.about_content :nth-child(2) {
+    transition-delay: 300ms;
+}
+
+#contact :nth-child(2) {
+    transition-delay: 300ms;
+}
+
 #main {
     display: flex;
     flex-direction: column;
