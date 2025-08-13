@@ -56,6 +56,21 @@
     gap: 6px;
 }
 
+.about-languages {
+    display: flex;
+    flex-direction: column;
+}
+
+.break {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
 .programming-language {
     padding: 5px 12px;
     background-color: #262626;
